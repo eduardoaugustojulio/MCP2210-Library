@@ -1,0 +1,4 @@
+/home/eduardo/Documents/spi-usb/mcp2210/build/CMakeFiles/edit_cache.dir
+/home/eduardo/Documents/spi-usb/mcp2210/build/CMakeFiles/rebuild_cache.dir
+/home/eduardo/Documents/spi-usb/mcp2210/build/CMakeFiles/mcp2210-test.dir
+/home/eduardo/Documents/spi-usb/mcp2210/build/CMakeFiles/mcp2210.dir

@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/mcp2210-test.dir/test/mcp2210test.cpp.o  -o mcp2210-test -rdynamic ../hid/libhid.a libmcp2210.a ../hid/libhid.a -ludev 
