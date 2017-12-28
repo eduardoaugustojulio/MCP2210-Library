@@ -321,6 +321,41 @@ void TestMisc(hid_device* handle) {
 
 }
 
+void TestNrf24L(hid_device *handle)
+{
+    ChipSettingsDef chipDef;
+
+    chipDef = GetChipSettings(handle);
+
+    for (int i = 0; i < 9; i++) {
+        chipDef.GP[i].PinDesignation = GP_PIN_DESIGNATION_GPIO;
+        chipDef.GP[i].GPIODirection = GPIO_DIRECTION_OUTPUT;
+        chipDef.GP[i].GPIOOutput = 0;
+    }
+
+    int r = SetChipSettings(handle, chipDef);
+
+    SPITransferSettingsDef def;
+    def = GetSPITransferSettings(handle);
+
+    //chip select is GP0
+    def.ActiveChipSelectValue = 0xfffe;
+    def.IdleChipSelectValue = 0xffff;
+    def.BitRate = 6000000l;
+    def.BytesPerSPITransfer = 2;
+
+    r = SetSPITransferSettings(handle, def);
+
+    if (r != 0) {
+        printf("Errror setting SPI parameters.\n");
+        return;
+    }
+    
+    byte spiCmdBuffer[10];
+    
+}
+
+
 int main(int argc, char** argv) {
     hid_device *handle;
 
@@ -341,9 +376,10 @@ int main(int argc, char** argv) {
     
     //TestGPIO(handle);
     //TestMCP23S08(handle);
-    TestTC77(handle);
+    //TestTC77(handle);
     //Test25LC020A(handle);
     //TestMCP3204(handle);
+    TestNrf24L(handle);
 
     /**
      * release the handle

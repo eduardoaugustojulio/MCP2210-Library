@@ -1,3 +1,0 @@
-/home/eduardo/Documents/spi-usb/hid/build/CMakeFiles/edit_cache.dir
-/home/eduardo/Documents/spi-usb/hid/build/CMakeFiles/hid.dir
-/home/eduardo/Documents/spi-usb/hid/build/CMakeFiles/rebuild_cache.dir

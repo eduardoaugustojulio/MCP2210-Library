@@ -32,7 +32,7 @@
 typedef uint8_t byte;
 
 #define MCP2210_VID 0x04d8
-#define MCP2210_PID 0x00de
+#define MCP2210_PID 0x0002
 
 /**
  * GPIO pin directions

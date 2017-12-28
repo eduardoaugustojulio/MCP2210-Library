@@ -1,2 +1,0 @@
-/usr/bin/ar qc libmcp2210.a  CMakeFiles/mcp2210.dir/src/mcp2210.cpp.o
-/usr/bin/ranlib libmcp2210.a
