@@ -5,12 +5,12 @@ add_compile_options(-std=c++11)
 set(PROJECT_PATH	${CMAKE_CURRENT_SOURCE_DIR})
 set(SRCS_PATH		"${PROJECT_PATH}/src")
 set(TEST_PATH 		"${PROJECT_PATH}/test")
-set(INC_PATH "${PROJECT_PATH}/include")
+set(INC_PATH        "${PROJECT_PATH}/include")
 
 include_directories(${INC_PATH})    
 file(GLOB SRCS  "${SRCS_PATH}/*.cpp" "${SRCS_PATH}/*.h")
 
-add_library(${PROJECT_NAME}  ${SRCS})
+add_library(${PROJECT_NAME} SHARED ${SRCS})
 
 target_link_libraries(${PROJECT_NAME} LINK_PUBLIC hid)
 target_include_directories(${PROJECT_NAME} PUBLIC ${INC_PATH})
