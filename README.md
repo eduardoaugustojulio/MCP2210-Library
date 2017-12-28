@@ -27,7 +27,7 @@ Note, the compiled code needs root access to the device and need to be run using
 
 To build use cmake:
 
-$ git glone
-$ cd MCP2210-Library/ && mkdir build
-$ cd build/ && cmake ../ && make
+`$ git glone project-url`
+`$ cd MCP2210-Library/ && mkdir build`
+`$ cd build/ && cmake ../ && make`
 
