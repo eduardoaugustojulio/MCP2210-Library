@@ -20,7 +20,7 @@ set(INC_PATH 		"${PROJECT_PATH}/include")
 include_directories(${INC_PATH} ${UDEV_INCLUDE_DIR} ${LIBUSB_INCLUDE_DIR})
 file(GLOB SRCS  "${SRCS_PATH}/*.c" "${SRCS_PATH}/*.h")
 
-add_library(${PROJECT_NAME} ${SRCS})
+add_library(${PROJECT_NAME} SHARED ${SRCS})
 target_link_libraries(${PROJECT_NAME} LINK_PUBLIC ${UDEV_LIBS} ${LIBUSB_LIBS} ${CMAKE_THREAD_LIBS_INIT})
 
 target_include_directories(${PROJECT_NAME} PUBLIC ${INC_PATH})
