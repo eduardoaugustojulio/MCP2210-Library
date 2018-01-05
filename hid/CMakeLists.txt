@@ -1,7 +1,10 @@
 cmake_minimum_required(VERSION 2.8)
 project(hid)
 
-find_path(LIBUSB_INCLUDE_DIR NAMES libusb.h PATH_SUFFIXES "libusb-1.0")
+find_path(LIBUSB_INCLUDE_DIR 
+        NAMES libusb.h 
+        PATH_SUFFIXES "libusb-1.0")
+        
 find_library(LIBUSB_LIBS usb-1.0)
 
 
