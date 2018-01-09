@@ -374,12 +374,12 @@ int main(int argc, char** argv) {
      * corresponding device.
      */
     
-    //TestGPIO(handle);
+    TestGPIO(handle);
     //TestMCP23S08(handle);
     //TestTC77(handle);
     //Test25LC020A(handle);
     //TestMCP3204(handle);
-    TestNrf24L(handle);
+    //TestNrf24L(handle);
 
     /**
      * release the handle
