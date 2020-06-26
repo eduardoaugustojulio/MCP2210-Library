@@ -1,1 +1,0 @@
-/usr/bin/cc -fPIC -O3 -Wall -Wextra  -shared -Wl,-soname,libhid.so -o libhid.so CMakeFiles/hid.dir/src/hid.c.o  /lib/x86_64-linux-gnu/libudev.so /usr/lib/x86_64-linux-gnu/libusb-1.0.so -lpthread 

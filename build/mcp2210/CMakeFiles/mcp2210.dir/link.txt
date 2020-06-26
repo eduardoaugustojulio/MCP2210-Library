@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC -O3 -Wall -Wextra  -shared -Wl,-soname,libmcp2210.so -o libmcp2210.so CMakeFiles/mcp2210.dir/src/mcp2210.cpp.o  -Wl,-rpath,/home/eduardo/Documents/MCP2210-Library/build/hid ../hid/libhid.so /lib/x86_64-linux-gnu/libudev.so /usr/lib/x86_64-linux-gnu/libusb-1.0.so -lpthread 
