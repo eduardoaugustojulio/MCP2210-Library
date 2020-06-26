@@ -1,0 +1,1 @@
+/usr/bin/c++  -O3 -Wall -Wextra   CMakeFiles/mcp2210-test.dir/test/mcp2210test.cpp.o  -o mcp2210-test  -Wl,-rpath,/home/eduardo/Documents/MCP2210-Library/build/mcp2210:/home/eduardo/Documents/MCP2210-Library/build/hid libmcp2210.so ../hid/libhid.so /lib/x86_64-linux-gnu/libudev.so /usr/lib/x86_64-linux-gnu/libusb-1.0.so -lpthread 

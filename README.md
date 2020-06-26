@@ -27,7 +27,9 @@ Note, the compiled code needs root access to the device and need to be run using
 
 To build use cmake:
 
-`$ git glone project-url`
-`$ cd MCP2210-Library/ && mkdir build`
-`$ cd build/ && cmake ../ && make`
-
+```
+sudo apt install libusb-1.0-0-dev libudev-dev -y
+git glone project-url
+cd MCP2210-Library/ && mkdir build
+cd build/ && cmake .. && make
+``` 

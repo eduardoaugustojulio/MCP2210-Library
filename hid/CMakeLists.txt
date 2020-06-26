@@ -1,15 +1,18 @@
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 3.4)
 project(hid)
 
-find_path(LIBUSB_INCLUDE_DIR 
-        NAMES libusb.h 
+find_path(LIBUSB_INCLUDE_DIR
+        REQUIRED 
+        NAMES "libusb.h" 
         PATH_SUFFIXES "libusb-1.0")
-        
-find_library(LIBUSB_LIBS usb-1.0)
+find_library(LIBUSB_LIBS "usb-1.0" REQUIRED)
 
 
-find_path(UDEV_INCLUDE_DIR libudev.h)
-find_library(UDEV_LIBS  udev)
+find_path(UDEV_INCLUDE_DIR 
+        REQUIRED
+        NAMES "libudev.h"
+        PATH_SUFFIXES "udev" )
+find_library(UDEV_LIBS  "udev" REQUIRED)
 
 find_package(Threads REQUIRED)
 
